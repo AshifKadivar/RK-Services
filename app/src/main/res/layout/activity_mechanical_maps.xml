@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MechanicalMapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LogOut"
+            android:textColor="@color/darkWhite"
+            map:backgroundTint="@color/darkRed"/>
+
+        <Switch
+            android:id="@+id/workingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:text="Working"
+            android:textColor="@android:color/white"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/customerName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:text="Customer Name"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:textSize="30dp"-->
+<!--        map:layout_constraintBottom_toTopOf="@+id/phoneNumber"-->
+<!--        map:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:text="Name : "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="30dp"-->
+<!--        map:layout_constraintBottom_toTopOf="@+id/phoneNumber"-->
+<!--        map:layout_constraintEnd_toStartOf="@+id/customerName"-->
+<!--        map:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/phoneNumber"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:text="Phone Number"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:textSize="30sp"-->
+<!--        map:layout_constraintBottom_toBottomOf="parent"-->
+<!--        map:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/phone"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:backgroundTint="@color/lighterGrey"-->
+<!--        android:borderWidth="0dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:drawableStart="@drawable/ic_phone"-->
+<!--        android:elevation="0dp"-->
+<!--        android:src="@drawable/ic_call_black_24dp"-->
+<!--        android:text="@string/phone_driver"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        map:layout_constraintBottom_toBottomOf="parent"-->
+<!--        map:layout_constraintEnd_toStartOf="@+id/phoneNumber"-->
+<!--        map:layout_constraintStart_toStartOf="parent" />-->
+
+
+
+        <LinearLayout
+            android:id="@+id/customerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            android:orientation="vertical"
+            android:translationZ="1dp"
+            android:visibility="gone"
+            map:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/bottomsheet_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/bringUpBottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80sp"
+                    android:orientation="horizontal">
+
+                    <!--                        <ImageView-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:background="@color/white"-->
+                    <!--                            android:padding="15sp"-->
+                    <!--                            android:src="@drawable/ic_keyboard_arrow_up_black_24dp" />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Name:"
+                        android:textColor="@color/darkBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/customerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="50dp"
+                        android:text="Customer Name"
+                        android:textColor="@color/darkBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--                        <ImageView-->
+                    <!--                            android:id="@+id/cancel"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:background="@color/white"-->
+                    <!--                            android:padding="15sp"-->
+                    <!--                            android:src="@drawable/ic_cancel_black_24dp" />-->
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:padding="20sp">
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/lighterGrey"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:elevation="0dp"
+                        android:src="@drawable/ic_call_black_24dp"
+                        android:text="@string/phone_driver"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp"
+                        android:text="+91 1234567890"
+                        android:textColor="@color/darkBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <!--                        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+                    <!--                            android:id="@+id/openMaps"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:backgroundTint="@color/lighterGrey"-->
+                    <!--                            android:borderWidth="0dp"-->
+                    <!--                            android:elevation="0dp"-->
+                    <!--                            android:src="@drawable/ic_map_black_24dp"-->
+                    <!--                            android:text="@string/phone_driver"-->
+                    <!--                            android:textColor="@android:color/white" />-->
+
+                </LinearLayout>
+
+
+                <!--                    <Button-->
+                <!--                        android:id="@+id/rideStatus"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_margin="20sp"-->
+                <!--                        android:border_radius="4dp"-->
+                <!--                        android:text="help_customer"-->
+                <!--                        android:text_color="colorPrimaryDark"-->
+                <!--                        android:text_size="22sp"-->
+                <!--                        android:text_style="bold"-->
+                <!--                        map:backgroundTint="@color/colorPrimaryDark"-->
+                <!--                        map:iconTint="@color/darkWhite" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

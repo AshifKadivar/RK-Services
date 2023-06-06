@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "59818173672",
+    "firebase_url": "https://rk-services-ab452-default-rtdb.firebaseio.com",
+    "project_id": "rk-services-ab452",
+    "storage_bucket": "rk-services-ab452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59818173672:android:5e22be30c992f5373ed55d",
+        "android_client_info": {
+          "package_name": "com.ask.rk_services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59818173672-ob5l6vl3b3qvfckbv6ugh6cras9ialsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYmb0AErQfeJhLzcswlUsU81HuwfGLRCQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59818173672-0dtatsi3n6v7or55b99miocbf7hqbnl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="@color/yellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_50" />
+
+        <EditText
+            android:id="@+id/signupFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSignUp"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:background="@drawable/et"
+            android:hint="Enter Full Name"
+            android:inputType="textPersonName"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/signupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupFullName"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:background="@drawable/et"
+            android:hint="Enter Email"
+            android:inputType="textWebEmailAddress"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/signupPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupEmail"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:background="@drawable/et"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/sp_15" />
+
+        <EditText
+            android:id="@+id/signupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signupPhoneNumber"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:background="@drawable/et"
+            android:hint="Enter Password"
+            android:inputType="textWebPassword"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/sp_15" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/signupAddress"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_below="@+id/signupPassword"-->
+        <!--            android:layout_marginStart="@dimen/dp_30"-->
+        <!--            android:layout_marginTop="21dp"-->
+        <!--            android:layout_marginEnd="@dimen/dp_30"-->
+        <!--            android:background="@drawable/et"-->
+        <!--            android:hint="Enter Address"-->
+        <!--            android:inputType="textPostalAddress"-->
+        <!--            android:padding="@dimen/dp_15"-->
+        <!--            android:textSize="@dimen/sp_15" />-->
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/radioRealButtonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/signupPassword"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="2dp"
+            app:borderColor="@color/darkWhite"
+            app:borderWidth="1dp"
+            app:divider="@color/darkWhite"
+            app:dividerPadding="10dp"
+            app:dividerWidth="1dp"
+            app:position="0"
+            app:radius="30dp"
+            app:ripple="true"
+            app:rippleColor="@color/colorAccent"
+            app:selectedBackground="@color/colorAccent">
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:drawable="@drawable/ic_person_black_24dp"
+                app:drawableGravity="top"
+                app:drawableHeight="48dp"
+                app:drawableTint="@color/white"
+                app:drawableWidth="48dp"
+                app:text="@string/customer"
+                app:textColor="@color/white" />
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:drawable="@mipmap/mechanical_2_foreground"
+                app:drawableGravity="top"
+                app:drawableHeight="48dp"
+                app:drawableTint="@color/white"
+                app:drawableWidth="48dp"
+                app:text="Mechanical"
+                app:textColor="@color/white" />
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+        <TextView
+            android:id="@+id/btnSignUpClickForLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioRealButtonGroup"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:text="Click here for Login"
+            android:textColor="@color/darkRed" />
+
+        <Button
+            android:id="@+id/btnGetOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioRealButtonGroup"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:background="#313435"
+            android:text="GET OTP"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp_20"
+            app:backgroundTint="#2D2F31" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_below="@+id/radioRealButtonGroup"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_50"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

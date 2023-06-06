@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">RK-Services</string>
+
+
+    <string name="phone_driver">Phone</string>
+    <string name="call_uber">Call Car</string>
+    <string name="type_4">Bike</string>
+    <string name="type_3">SUV</string>
+    <string name="type_2">Van</string>
+    <string name="type_1">Car</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name </string>
+    <string name="confirm">Confirm</string>
+    <string name="working">Working</string>
+    <string name="destination">Destination</string>
+    <string name="picked_customer">Picked customer</string>
+    <string name="car">Car</string>
+    <string name="balance">Balance</string>
+    <string name="payout">Payout</string>
+    <string name="from_to">From - To</string>
+    <string name="distance">Distance</string>
+    <string name="date">Date</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Login</string>
+    <string name="register">Register</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="customer">Customer</string>
+    <string name="driver">Driver</string>
+    <string name="getting_driver">Getting Your Driver ....</string>
+    <string name="looking_driver">Looking For Your Driver…</string>
+    <string name="driver_here">Driver Here</string>
+    <string name="driver_found">Driver Found</string>
+    <string name="drive_complete">Drive Completed</string>
+    <string name="not_approved">Your Account Has Not Been Approved</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_you_an_one_time_password_on_this_mobile_number">We will send you an One Time Password on this mobile number</string>
+    <string name="_91">+91 - </string>
+    <string name="_123456789">1234567891</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP?</string>
+    <string name="verify">Verify</string>
+    <string name="resend_otp">RESEND OTP</string>
+
+
+<!--    <string name="style_json">-->
+<!--  [-->
+<!--        {-->
+<!--        \elementType\: \"geometry\",-->
+<!--        \stylers\: [{\color\: \"#242f3e"\}]-->
+<!--        },-->
+<!--        {-->
+<!--        \elementType\: \"labels.text.stroke\",-->
+<!--        \stylers\: [{\color\: \"#242f3e"\}]-->
+<!--        },-->
+<!--        {-->
+<!--        \elementType\: \"labels.text.fill\",-->
+<!--        \stylers\: [{\color\: \"#746855"\}]-->
+<!--        },-->
+<!--    {-->
+<!--        \"featureType\": \"all\",-->
+<!--        \"elementType\": \"labels\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"administrative\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            },-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"landscape\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.attraction\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.business\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.government\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#dfdcd5\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.medical\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#dfdcd5\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.park\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#bad294\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.place_of_worship\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.school\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"poi.sports_complex\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#efebe2\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.highway\",-->
+<!--        \"elementType\": \"geometry.fill\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#ffffff\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.highway\",-->
+<!--        \"elementType\": \"geometry.stroke\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.arterial\",-->
+<!--        \"elementType\": \"geometry.fill\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#ffffff\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.arterial\",-->
+<!--        \"elementType\": \"geometry.stroke\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.local\",-->
+<!--        \"elementType\": \"geometry.fill\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#fbfbfb\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"road.local\",-->
+<!--        \"elementType\": \"geometry.stroke\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"transit\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"visibility\": \"on\"-->
+<!--            }-->
+<!--        ]-->
+<!--    },-->
+<!--    {-->
+<!--        \"featureType\": \"water\",-->
+<!--        \"elementType\": \"all\",-->
+<!--        \"stylers\": [-->
+<!--            {-->
+<!--                \"color\": \"#a5d7e0\"-->
+<!--            }-->
+<!--        ]-->
+<!--    }-->
+<!--]-->
+<!--  </string>-->
+<!--    <string name="title_activity_driver_maps">DriverMapsActivity</string>-->
+
+
+</resources>
